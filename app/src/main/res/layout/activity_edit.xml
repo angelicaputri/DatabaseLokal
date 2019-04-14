@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.EditActivity">
+
+    <TextView
+        android:id="@+id/editp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Revisi Data"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Sekolah"
+        android:layout_below="@id/editp"
+        android:id="@+id/tv1"/>
+    <EditText
+        android:id="@+id/et_namsek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Sekolah"
+        android:layout_below="@+id/tv1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat Sekolah"
+        android:layout_below="@id/et_namsek"
+        android:id="@+id/tv2" />
+
+    <EditText
+        android:id="@+id/et_alamsek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat Sekolah"
+        android:layout_below="@+id/tv2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Siswa"
+        android:layout_below="@id/et_alamsek"
+        android:id="@+id/tv3"/>
+
+    <EditText
+        android:id="@+id/et_jumsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Siswa"
+        android:layout_below="@+id/tv3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Guru"
+        android:layout_below="@id/et_jumsis"
+        android:id="@+id/tv4"/>
+
+    <EditText
+        android:id="@+id/et_jumgur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Guru"
+        android:layout_below="@id/tv4"/>
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UBAH DATA"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_jumgur"/>
+
+</RelativeLayout>

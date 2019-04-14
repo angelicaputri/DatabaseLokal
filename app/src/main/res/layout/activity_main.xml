@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input Data Sekolah"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/namasekolah"
+        android:layout_width="395dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:hint="Nama Sekolah"
+        android:textSize="15dp"
+        android:layout_below="@id/tv1"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/alamatsekolah"
+        android:layout_width="390dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:hint="Alamat Sekolah"
+        android:layout_below="@id/namasekolah"
+        android:textSize="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/jumlahsiswa"
+        android:layout_width="390dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:hint="Jumlah Siswa"
+        android:layout_below="@id/alamatsekolah"
+        android:textSize="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/jumlahguru"
+        android:layout_width="390dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:hint="Jumlah Guru"
+        android:layout_below="@id/jumlahsiswa"
+        android:textSize="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginLeft="90dp"
+        android:text="Submit"
+        android:textSize="17dp"
+        android:layout_below="@id/jumlahguru"
+        />
+
+    <Button
+        android:id="@+id/lihatdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/submit"
+        android:layout_below="@id/jumlahguru"
+        android:text="Lihat Data"
+        android:textSize="17dp"
+        />
+</RelativeLayout>
